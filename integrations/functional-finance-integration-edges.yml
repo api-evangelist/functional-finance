@@ -1,0 +1,16 @@
+generated: '2026-10-22'
+method: none
+source:
+- https://zapier.com/apps/functional-finance/integrations
+- https://n8n.io/integrations/functional-finance/
+- https://composio.dev/toolkits/functional-finance
+- https://monid.ai/tools/functional-finance
+checked:
+- https://composio.dev/toolkits/functional-finance
+- https://monid.ai/tools/functional-finance
+- https://n8n.io/integrations/functional-finance/
+- https://zapier.com/apps/functional-finance/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []

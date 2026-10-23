@@ -1,25 +1,75 @@
 aid: functional-finance
+
 name: Functional Finance
-description: 'Functional Finance is a company surfaced via the API Evangelist harvest backlog (source:
-  vc-portfolio; backed by nea) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://cdn.prod.website-files.com/669a8a92a94ec7da3395ad98/66fad81449471d6e337cc047_ff-open%20graph.webp
+
+description: 'Functional Finance provides an automated financial operations platform for insurance companies, MGAs, and wholesalers. It simplifies billing, payments, and reconciliation, offering APIs to integrate insurance money movement, streamline workflows, and improve operational efficiency across the insurance ecosystem.'
+
 url: https://raw.githubusercontent.com/api-evangelist/functional-finance/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-22'
+
 modified: '2026-10-22'
+
 tags:
 - Company
-apis: []
+- Insurance
+- FinTech
+- Payments
+- Billing
+- API
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- nea
+
 common:
+- type: Hosts
+  url: hosts/functional-finance-hosts.yml
+- type: Vendors
+  url: vendors/functional-finance-vendors.yml
+- type: TermsOfService
+  url: https://www.functionalfi.com/terms-of-service
+- type: PrivacyPolicy
+  url: https://www.functionalfi.com/privacy-policy
+- type: Documentation
+  url: https://dev.functionalfi.com/
+- type: DomainSecurity
+  url: security/functional-finance-domain-security.yml
 - type: Website
   url: https://www.functionalfi.com/
+
+apis: []
+
+x-backed-by:
+- nea
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-22'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://www.functionalfi.com/
+    status: 200
+x-enrichment:
+  date: '2026-10-22'
+  status: enriched
+  artifacts_added: 7
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
